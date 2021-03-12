@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.util.Timer;
 import javax.swing.JPanel;
 import java.util.Random;
+import javax.swing.Timer;
 
 public class GamePanel extends JPanel implements ActionListener {
 
@@ -75,7 +75,7 @@ public class GamePanel extends JPanel implements ActionListener {
           metrics.stringWidth("Score: " + applesEaten)) / 2, g.getFont().getSize());
     }
     else {
-      gameOver();
+      gameOver(g);
     }
   }
 
